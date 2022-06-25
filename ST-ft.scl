@@ -1,0 +1,16 @@
+﻿FUNCTION_BLOCK "ST-ft"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      in : Array[0..31] of Bool;
+      out : Array[0..31] of Bool;
+      a : Int := 10;
+      b : Int := 11;
+   END_VAR
+
+
+BEGIN
+	//--------------------------
+	#out[#a] := #in[#b];
+END_FUNCTION_BLOCK
+
